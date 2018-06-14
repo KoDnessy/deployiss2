@@ -1,0 +1,14 @@
+
+---
+
+- name: "test sur machine linux"
+  hosts: "linux"
+  gather_facts: "false"
+  tasks :
+   - name: yum de php
+     yum :
+      name: php7.0 
+   - name: yum de vim
+     yum :
+      name: vim       
+

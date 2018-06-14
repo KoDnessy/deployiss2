@@ -19,10 +19,13 @@
      win_chocolatey:
           name: webdeploy
           state: present
-   - name: Add ACME webapplication on IIS modifie pour test jenkins chez github
+   - name: Add ACME webapplication on IIS modifie pour test jenkins
      win_iis_webapplication:
         name: api
         site: acme
         state: present
         physical_path: C:\site
-       
+   - name: Copy a single file
+     win_copy:
+        src: /etc/ansible/deployiss1/welcome2.html
+        dest: c:\site\     
