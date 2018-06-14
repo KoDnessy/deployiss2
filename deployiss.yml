@@ -28,4 +28,9 @@
    - name: Copy a single file
      win_copy:
         src: /etc/ansible/deployiss1/welcome2.html
-        dest: c:\site\     
+        dest: c:\site\    
+   - name: Copy a single file
+     win_copy:
+        src: /etc/ansible/deployiss1/pendu.py
+        dest: c:\site\ 
+ 
