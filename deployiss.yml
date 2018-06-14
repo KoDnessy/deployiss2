@@ -27,10 +27,10 @@
         physical_path: C:\site
    - name: Copy a single file
      win_copy:
-        src: /etc/ansible/deployiss1/welcome2.html
+        src: /etc/ansible/deployiss2/welcome2.html
         dest: c:\site\    
    - name: Copy a single file
      win_copy:
-        src: /etc/ansible/deployiss1/pendu.py
+        src: /etc/ansible/deployiss2/pendu.py
         dest: c:\site\ 
  
